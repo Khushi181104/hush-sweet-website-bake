@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,19 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom colors for our bakery site
+				hush: {
+					green: '#9BA968',
+					pink: '#E8B4BD',
+					cream: '#FEF6E4',
+					text: '#483B36',
+					darkgreen: '#4F5731'
 				}
+			},
+			fontFamily: {
+				serif: ['Georgia', 'serif'],
+				sans: ['Helvetica', 'Arial', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
