@@ -50,6 +50,13 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    /* Hush custom colors */
+    --hush-green: 73 26% 52%;
+    --hush-cream: 48 100% 92%;
+    --hush-text: 140 40% 15%;
+    --hush-pink: 348 91% 87%;
+    --hush-darkgreen: 140 40% 15%;
   }
 
   .dark {
@@ -94,10 +101,81 @@
 @layer base {
   * {
     @apply border-border;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Copperplate', serif;
+  }
+
+  /* Custom font styles */
+  .font-serif {
+    font-family: 'Corinthia', 'Playfair Display', serif;
+  }
+  
+  .active {
+    font-weight: bold;
+    color: theme('colors.hush-pink');
+  }
+}
+
+@layer components {
+  .bg-hush-green {
+    background-color: #95A166;
+  }
+  
+  .bg-hush-cream {
+    background-color: #FFF5D5;
+  }
+  
+  .text-hush-text {
+    color: #1E3616;
+  }
+  
+  .bg-hush-pink {
+    background-color: #FCBDCC;
+  }
+  
+  .text-hush-pink {
+    color: #FCBDCC;
+  }
+  
+  .bg-hush-darkgreen {
+    background-color: #1E3616;
+  }
+  
+  .text-hush-darkgreen {
+    color: #345c43;
+  }
+  
+  .border-hush-green {
+    border-color: #95A166;
+  }
+  
+  /* Media queries for responsive design */
+  @media (max-width: 768px) {
+    .text-[6em] {
+      font-size: 4em;
+    }
+    
+    .hero-img {
+      height: auto;
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+    }
+    
+    .products {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .product-card {
+      margin-bottom: 2em;
+    }
   }
 }
 
@@ -132,5 +210,9 @@
     align-items: center;
     justify-content: center;
     margin-right: 1rem;
+  }
+  
+  .scroll-container:hover .scroll-text {
+    animation-play-state: paused;
   }
 }
