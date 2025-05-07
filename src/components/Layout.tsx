@@ -92,28 +92,42 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {children}
       </main>
       
-      {/* Flavor Banner */}
+      {/* Flavor Banner with Cupcake Icons */}
       <div className="bg-hush-pink py-3 overflow-hidden">
-        <div className="flex space-x-4 animate-marquee whitespace-nowrap">
-          {['STRAWBERRY', 'CHOCO HEAVEN', 'MINT MADNESS', 'RED VELVET', 'VANILLA DREAM', 'LEMON ZEST', 'CARAMEL SWIRL'].map((flavor, index) => (
-            <div key={index} className="flex items-center">
-              <svg className="w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"></path>
-                <path d="M8 10s1.5-1 4-1 4 1 4 1"></path>
-                <path d="M9 15l-.5-1"></path>
-                <path d="M12 15v-1"></path>
-                <path d="M15 15l.5-1"></path>
-              </svg>
-              <span className="text-white font-semibold tracking-wider">{flavor}</span>
-              <svg className="w-6 h-6 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"></path>
-                <path d="M8 10s1.5-1 4-1 4 1 4 1"></path>
-                <path d="M9 15l-.5-1"></path>
-                <path d="M12 15v-1"></path>
-                <path d="M15 15l.5-1"></path>
-              </svg>
-            </div>
-          ))}
+        <div className="scroll-container">
+          <div className="scroll-content animate-marquee whitespace-nowrap flex items-center">
+            <span className="flex items-center mx-4 text-white font-semibold tracking-wider">
+              STRAWBERRY <img src="https://cdn-icons-png.flaticon.com/512/193/193777.png" alt="cupcake" className="w-5 h-5 ml-2" />
+            </span>
+            <span className="flex items-center mx-4 text-white font-semibold tracking-wider">
+              CHOCO HEAVEN <img src="https://cdn-icons-png.flaticon.com/512/193/193777.png" alt="cupcake" className="w-5 h-5 ml-2" />
+            </span>
+            <span className="flex items-center mx-4 text-white font-semibold tracking-wider">
+              VANILLA <img src="https://cdn-icons-png.flaticon.com/512/193/193777.png" alt="cupcake" className="w-5 h-5 ml-2" />
+            </span>
+            <span className="flex items-center mx-4 text-white font-semibold tracking-wider">
+              MINT MADNESS <img src="https://cdn-icons-png.flaticon.com/512/193/193777.png" alt="cupcake" className="w-5 h-5 ml-2" />
+            </span>
+            <span className="flex items-center mx-4 text-white font-semibold tracking-wider">
+              RED VELVET <img src="https://cdn-icons-png.flaticon.com/512/193/193777.png" alt="cupcake" className="w-5 h-5 ml-2" />
+            </span>
+            {/* Duplicate items to create continuous effect */}
+            <span className="flex items-center mx-4 text-white font-semibold tracking-wider">
+              STRAWBERRY <img src="https://cdn-icons-png.flaticon.com/512/193/193777.png" alt="cupcake" className="w-5 h-5 ml-2" />
+            </span>
+            <span className="flex items-center mx-4 text-white font-semibold tracking-wider">
+              CHOCO HEAVEN <img src="https://cdn-icons-png.flaticon.com/512/193/193777.png" alt="cupcake" className="w-5 h-5 ml-2" />
+            </span>
+            <span className="flex items-center mx-4 text-white font-semibold tracking-wider">
+              VANILLA <img src="https://cdn-icons-png.flaticon.com/512/193/193777.png" alt="cupcake" className="w-5 h-5 ml-2" />
+            </span>
+            <span className="flex items-center mx-4 text-white font-semibold tracking-wider">
+              MINT MADNESS <img src="https://cdn-icons-png.flaticon.com/512/193/193777.png" alt="cupcake" className="w-5 h-5 ml-2" />
+            </span>
+            <span className="flex items-center mx-4 text-white font-semibold tracking-wider">
+              RED VELVET <img src="https://cdn-icons-png.flaticon.com/512/193/193777.png" alt="cupcake" className="w-5 h-5 ml-2" />
+            </span>
+          </div>
         </div>
       </div>
     </div>
