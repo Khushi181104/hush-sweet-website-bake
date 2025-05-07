@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -119,16 +120,17 @@
   
   .scroll-text {
     display: flex;
-    gap: 3rem;
+    gap: 2.5rem;
     animation: scroll 25s linear infinite;
     white-space: nowrap;
     min-width: 100%;
-    padding-right: 3rem;
+    padding-right: 2.5rem;
   }
   
   .scroll-item {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-right: 1rem;
   }
 }

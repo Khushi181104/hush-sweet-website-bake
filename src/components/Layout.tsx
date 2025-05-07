@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { CakeSlice } from 'lucide-react';
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -92,121 +93,53 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {children}
       </main>
       
-      {/* Flavor Banner with White Cupcake Icons */}
+      {/* Flavor Banner with Cupcake Icons */}
       <div className="bg-hush-pink py-3 overflow-hidden">
         <div className="scroll-container">
           <div className="scroll-text">
+            {/* First set of items */}
             <div className="scroll-item">
-              <span className="text-white font-semibold tracking-wider mr-2">STRAWBERRY</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-cupcake">
-                <path d="M12 2a3 3 0 0 0-3 3c0 1.6.96 2.4 3 4 2.04-1.6 3-2.4 3-4a3 3 0 0 0-3-3Z"/>
-                <rect width="18" height="12" x="3" y="12" rx="2"/>
-                <path d="M2 22h20"/>
-                <path d="M7 12v10"/>
-                <path d="M17 12v10"/>
-                <path d="M12 12v10"/>
-              </svg>
+              <span className="text-white font-semibold tracking-wider mr-3">STRAWBERRY</span>
+              <CakeSlice className="text-white" size={18} />
             </div>
             <div className="scroll-item">
-              <span className="text-white font-semibold tracking-wider mr-2">CHOCO HEAVEN</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-cupcake">
-                <path d="M12 2a3 3 0 0 0-3 3c0 1.6.96 2.4 3 4 2.04-1.6 3-2.4 3-4a3 3 0 0 0-3-3Z"/>
-                <rect width="18" height="12" x="3" y="12" rx="2"/>
-                <path d="M2 22h20"/>
-                <path d="M7 12v10"/>
-                <path d="M17 12v10"/>
-                <path d="M12 12v10"/>
-              </svg>
+              <span className="text-white font-semibold tracking-wider mr-3">CHOCO HEAVEN</span>
+              <CakeSlice className="text-white" size={18} />
             </div>
             <div className="scroll-item">
-              <span className="text-white font-semibold tracking-wider mr-2">VANILLA</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-cupcake">
-                <path d="M12 2a3 3 0 0 0-3 3c0 1.6.96 2.4 3 4 2.04-1.6 3-2.4 3-4a3 3 0 0 0-3-3Z"/>
-                <rect width="18" height="12" x="3" y="12" rx="2"/>
-                <path d="M2 22h20"/>
-                <path d="M7 12v10"/>
-                <path d="M17 12v10"/>
-                <path d="M12 12v10"/>
-              </svg>
+              <span className="text-white font-semibold tracking-wider mr-3">VANILLA</span>
+              <CakeSlice className="text-white" size={18} />
             </div>
             <div className="scroll-item">
-              <span className="text-white font-semibold tracking-wider mr-2">MINT MADNESS</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-cupcake">
-                <path d="M12 2a3 3 0 0 0-3 3c0 1.6.96 2.4 3 4 2.04-1.6 3-2.4 3-4a3 3 0 0 0-3-3Z"/>
-                <rect width="18" height="12" x="3" y="12" rx="2"/>
-                <path d="M2 22h20"/>
-                <path d="M7 12v10"/>
-                <path d="M17 12v10"/>
-                <path d="M12 12v10"/>
-              </svg>
+              <span className="text-white font-semibold tracking-wider mr-3">MINT MADNESS</span>
+              <CakeSlice className="text-white" size={18} />
             </div>
             <div className="scroll-item">
-              <span className="text-white font-semibold tracking-wider mr-2">RED VELVET</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-cupcake">
-                <path d="M12 2a3 3 0 0 0-3 3c0 1.6.96 2.4 3 4 2.04-1.6 3-2.4 3-4a3 3 0 0 0-3-3Z"/>
-                <rect width="18" height="12" x="3" y="12" rx="2"/>
-                <path d="M2 22h20"/>
-                <path d="M7 12v10"/>
-                <path d="M17 12v10"/>
-                <path d="M12 12v10"/>
-              </svg>
+              <span className="text-white font-semibold tracking-wider mr-3">RED VELVET</span>
+              <CakeSlice className="text-white" size={18} />
             </div>
           </div>
           <div className="scroll-text">
+            {/* Second set of items (duplicate for continuous scrolling) */}
             <div className="scroll-item">
-              <span className="text-white font-semibold tracking-wider mr-2">STRAWBERRY</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-cupcake">
-                <path d="M12 2a3 3 0 0 0-3 3c0 1.6.96 2.4 3 4 2.04-1.6 3-2.4 3-4a3 3 0 0 0-3-3Z"/>
-                <rect width="18" height="12" x="3" y="12" rx="2"/>
-                <path d="M2 22h20"/>
-                <path d="M7 12v10"/>
-                <path d="M17 12v10"/>
-                <path d="M12 12v10"/>
-              </svg>
+              <span className="text-white font-semibold tracking-wider mr-3">STRAWBERRY</span>
+              <CakeSlice className="text-white" size={18} />
             </div>
             <div className="scroll-item">
-              <span className="text-white font-semibold tracking-wider mr-2">CHOCO HEAVEN</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-cupcake">
-                <path d="M12 2a3 3 0 0 0-3 3c0 1.6.96 2.4 3 4 2.04-1.6 3-2.4 3-4a3 3 0 0 0-3-3Z"/>
-                <rect width="18" height="12" x="3" y="12" rx="2"/>
-                <path d="M2 22h20"/>
-                <path d="M7 12v10"/>
-                <path d="M17 12v10"/>
-                <path d="M12 12v10"/>
-              </svg>
+              <span className="text-white font-semibold tracking-wider mr-3">CHOCO HEAVEN</span>
+              <CakeSlice className="text-white" size={18} />
             </div>
             <div className="scroll-item">
-              <span className="text-white font-semibold tracking-wider mr-2">VANILLA</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-cupcake">
-                <path d="M12 2a3 3 0 0 0-3 3c0 1.6.96 2.4 3 4 2.04-1.6 3-2.4 3-4a3 3 0 0 0-3-3Z"/>
-                <rect width="18" height="12" x="3" y="12" rx="2"/>
-                <path d="M2 22h20"/>
-                <path d="M7 12v10"/>
-                <path d="M17 12v10"/>
-                <path d="M12 12v10"/>
-              </svg>
+              <span className="text-white font-semibold tracking-wider mr-3">VANILLA</span>
+              <CakeSlice className="text-white" size={18} />
             </div>
             <div className="scroll-item">
-              <span className="text-white font-semibold tracking-wider mr-2">MINT MADNESS</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-cupcake">
-                <path d="M12 2a3 3 0 0 0-3 3c0 1.6.96 2.4 3 4 2.04-1.6 3-2.4 3-4a3 3 0 0 0-3-3Z"/>
-                <rect width="18" height="12" x="3" y="12" rx="2"/>
-                <path d="M2 22h20"/>
-                <path d="M7 12v10"/>
-                <path d="M17 12v10"/>
-                <path d="M12 12v10"/>
-              </svg>
+              <span className="text-white font-semibold tracking-wider mr-3">MINT MADNESS</span>
+              <CakeSlice className="text-white" size={18} />
             </div>
             <div className="scroll-item">
-              <span className="text-white font-semibold tracking-wider mr-2">RED VELVET</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-cupcake">
-                <path d="M12 2a3 3 0 0 0-3 3c0 1.6.96 2.4 3 4 2.04-1.6 3-2.4 3-4a3 3 0 0 0-3-3Z"/>
-                <rect width="18" height="12" x="3" y="12" rx="2"/>
-                <path d="M2 22h20"/>
-                <path d="M7 12v10"/>
-                <path d="M17 12v10"/>
-                <path d="M12 12v10"/>
-              </svg>
+              <span className="text-white font-semibold tracking-wider mr-3">RED VELVET</span>
+              <CakeSlice className="text-white" size={18} />
             </div>
           </div>
         </div>
