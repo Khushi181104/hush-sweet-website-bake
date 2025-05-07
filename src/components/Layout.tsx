@@ -92,41 +92,122 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {children}
       </main>
       
-      {/* Flavor Banner with Cupcake Icons */}
+      {/* Flavor Banner with White Cupcake Icons */}
       <div className="bg-hush-pink py-3 overflow-hidden">
         <div className="scroll-container">
-          <div className="scroll-content animate-marquee whitespace-nowrap flex items-center">
-            <span className="flex items-center mx-4 text-white font-semibold tracking-wider">
-              STRAWBERRY <img src="https://cdn-icons-png.flaticon.com/512/193/193777.png" alt="cupcake" className="w-5 h-5 ml-2" />
-            </span>
-            <span className="flex items-center mx-4 text-white font-semibold tracking-wider">
-              CHOCO HEAVEN <img src="https://cdn-icons-png.flaticon.com/512/193/193777.png" alt="cupcake" className="w-5 h-5 ml-2" />
-            </span>
-            <span className="flex items-center mx-4 text-white font-semibold tracking-wider">
-              VANILLA <img src="https://cdn-icons-png.flaticon.com/512/193/193777.png" alt="cupcake" className="w-5 h-5 ml-2" />
-            </span>
-            <span className="flex items-center mx-4 text-white font-semibold tracking-wider">
-              MINT MADNESS <img src="https://cdn-icons-png.flaticon.com/512/193/193777.png" alt="cupcake" className="w-5 h-5 ml-2" />
-            </span>
-            <span className="flex items-center mx-4 text-white font-semibold tracking-wider">
-              RED VELVET <img src="https://cdn-icons-png.flaticon.com/512/193/193777.png" alt="cupcake" className="w-5 h-5 ml-2" />
-            </span>
-            {/* Duplicate items to create continuous effect */}
-            <span className="flex items-center mx-4 text-white font-semibold tracking-wider">
-              STRAWBERRY <img src="https://cdn-icons-png.flaticon.com/512/193/193777.png" alt="cupcake" className="w-5 h-5 ml-2" />
-            </span>
-            <span className="flex items-center mx-4 text-white font-semibold tracking-wider">
-              CHOCO HEAVEN <img src="https://cdn-icons-png.flaticon.com/512/193/193777.png" alt="cupcake" className="w-5 h-5 ml-2" />
-            </span>
-            <span className="flex items-center mx-4 text-white font-semibold tracking-wider">
-              VANILLA <img src="https://cdn-icons-png.flaticon.com/512/193/193777.png" alt="cupcake" className="w-5 h-5 ml-2" />
-            </span>
-            <span className="flex items-center mx-4 text-white font-semibold tracking-wider">
-              MINT MADNESS <img src="https://cdn-icons-png.flaticon.com/512/193/193777.png" alt="cupcake" className="w-5 h-5 ml-2" />
-            </span>
-            <span className="flex items-center mx-4 text-white font-semibold tracking-wider">
-              RED VELVET <img src="https://cdn-icons-png.flaticon.com/512/193/193777.png" alt="cupcake" className="w-5 h-5 ml-2" />
-            </span>
+          <div className="scroll-text">
+            <div className="scroll-item">
+              <span className="text-white font-semibold tracking-wider mr-2">STRAWBERRY</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-cupcake">
+                <path d="M12 2a3 3 0 0 0-3 3c0 1.6.96 2.4 3 4 2.04-1.6 3-2.4 3-4a3 3 0 0 0-3-3Z"/>
+                <rect width="18" height="12" x="3" y="12" rx="2"/>
+                <path d="M2 22h20"/>
+                <path d="M7 12v10"/>
+                <path d="M17 12v10"/>
+                <path d="M12 12v10"/>
+              </svg>
+            </div>
+            <div className="scroll-item">
+              <span className="text-white font-semibold tracking-wider mr-2">CHOCO HEAVEN</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-cupcake">
+                <path d="M12 2a3 3 0 0 0-3 3c0 1.6.96 2.4 3 4 2.04-1.6 3-2.4 3-4a3 3 0 0 0-3-3Z"/>
+                <rect width="18" height="12" x="3" y="12" rx="2"/>
+                <path d="M2 22h20"/>
+                <path d="M7 12v10"/>
+                <path d="M17 12v10"/>
+                <path d="M12 12v10"/>
+              </svg>
+            </div>
+            <div className="scroll-item">
+              <span className="text-white font-semibold tracking-wider mr-2">VANILLA</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-cupcake">
+                <path d="M12 2a3 3 0 0 0-3 3c0 1.6.96 2.4 3 4 2.04-1.6 3-2.4 3-4a3 3 0 0 0-3-3Z"/>
+                <rect width="18" height="12" x="3" y="12" rx="2"/>
+                <path d="M2 22h20"/>
+                <path d="M7 12v10"/>
+                <path d="M17 12v10"/>
+                <path d="M12 12v10"/>
+              </svg>
+            </div>
+            <div className="scroll-item">
+              <span className="text-white font-semibold tracking-wider mr-2">MINT MADNESS</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-cupcake">
+                <path d="M12 2a3 3 0 0 0-3 3c0 1.6.96 2.4 3 4 2.04-1.6 3-2.4 3-4a3 3 0 0 0-3-3Z"/>
+                <rect width="18" height="12" x="3" y="12" rx="2"/>
+                <path d="M2 22h20"/>
+                <path d="M7 12v10"/>
+                <path d="M17 12v10"/>
+                <path d="M12 12v10"/>
+              </svg>
+            </div>
+            <div className="scroll-item">
+              <span className="text-white font-semibold tracking-wider mr-2">RED VELVET</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-cupcake">
+                <path d="M12 2a3 3 0 0 0-3 3c0 1.6.96 2.4 3 4 2.04-1.6 3-2.4 3-4a3 3 0 0 0-3-3Z"/>
+                <rect width="18" height="12" x="3" y="12" rx="2"/>
+                <path d="M2 22h20"/>
+                <path d="M7 12v10"/>
+                <path d="M17 12v10"/>
+                <path d="M12 12v10"/>
+              </svg>
+            </div>
+          </div>
+          <div className="scroll-text">
+            <div className="scroll-item">
+              <span className="text-white font-semibold tracking-wider mr-2">STRAWBERRY</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-cupcake">
+                <path d="M12 2a3 3 0 0 0-3 3c0 1.6.96 2.4 3 4 2.04-1.6 3-2.4 3-4a3 3 0 0 0-3-3Z"/>
+                <rect width="18" height="12" x="3" y="12" rx="2"/>
+                <path d="M2 22h20"/>
+                <path d="M7 12v10"/>
+                <path d="M17 12v10"/>
+                <path d="M12 12v10"/>
+              </svg>
+            </div>
+            <div className="scroll-item">
+              <span className="text-white font-semibold tracking-wider mr-2">CHOCO HEAVEN</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-cupcake">
+                <path d="M12 2a3 3 0 0 0-3 3c0 1.6.96 2.4 3 4 2.04-1.6 3-2.4 3-4a3 3 0 0 0-3-3Z"/>
+                <rect width="18" height="12" x="3" y="12" rx="2"/>
+                <path d="M2 22h20"/>
+                <path d="M7 12v10"/>
+                <path d="M17 12v10"/>
+                <path d="M12 12v10"/>
+              </svg>
+            </div>
+            <div className="scroll-item">
+              <span className="text-white font-semibold tracking-wider mr-2">VANILLA</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-cupcake">
+                <path d="M12 2a3 3 0 0 0-3 3c0 1.6.96 2.4 3 4 2.04-1.6 3-2.4 3-4a3 3 0 0 0-3-3Z"/>
+                <rect width="18" height="12" x="3" y="12" rx="2"/>
+                <path d="M2 22h20"/>
+                <path d="M7 12v10"/>
+                <path d="M17 12v10"/>
+                <path d="M12 12v10"/>
+              </svg>
+            </div>
+            <div className="scroll-item">
+              <span className="text-white font-semibold tracking-wider mr-2">MINT MADNESS</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-cupcake">
+                <path d="M12 2a3 3 0 0 0-3 3c0 1.6.96 2.4 3 4 2.04-1.6 3-2.4 3-4a3 3 0 0 0-3-3Z"/>
+                <rect width="18" height="12" x="3" y="12" rx="2"/>
+                <path d="M2 22h20"/>
+                <path d="M7 12v10"/>
+                <path d="M17 12v10"/>
+                <path d="M12 12v10"/>
+              </svg>
+            </div>
+            <div className="scroll-item">
+              <span className="text-white font-semibold tracking-wider mr-2">RED VELVET</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-cupcake">
+                <path d="M12 2a3 3 0 0 0-3 3c0 1.6.96 2.4 3 4 2.04-1.6 3-2.4 3-4a3 3 0 0 0-3-3Z"/>
+                <rect width="18" height="12" x="3" y="12" rx="2"/>
+                <path d="M2 22h20"/>
+                <path d="M7 12v10"/>
+                <path d="M17 12v10"/>
+                <path d="M12 12v10"/>
+              </svg>
+            </div>
           </div>
         </div>
       </div>

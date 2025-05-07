@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -102,27 +101,34 @@
 }
 
 @layer utilities {
-  .animate-marquee {
-    animation: marquee 25s linear infinite;
-  }
-
-  @keyframes marquee {
+  @keyframes scroll {
     0% {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-50%);
+      transform: translateX(-100%);
     }
   }
 
   .scroll-container {
     width: 100%;
+    display: flex;
     overflow: hidden;
+    position: relative;
   }
   
-  .scroll-content {
+  .scroll-text {
     display: flex;
+    gap: 3rem;
+    animation: scroll 25s linear infinite;
     white-space: nowrap;
-    animation: marquee 25s linear infinite;
+    min-width: 100%;
+    padding-right: 3rem;
+  }
+  
+  .scroll-item {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
   }
 }
